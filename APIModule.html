@@ -1,0 +1,114 @@
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title> Faiza Javed's Portfolio </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+			<ul id="NavBar">
+                <img src="photos/logo.png" id="logo"> </img> 
+				<li><a href="index.html">Home</a></li>
+				<li> <a href="about.html">About</a></li>
+                <li> <a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+    </header>
+    <center> 
+    <article id="fullPage">
+            <article id="articleTitleBig">
+                <h2 id="moduleTitleBig"> Web API Development Module </h2>
+                <p id="moduleDateBig"> September 2021 - December 2021 </p>
+            </article>
+            <img src="photos/5007CEM.png" id="moduleImgMedium"> </img> 
+            <article id="fullPageGrid">
+                <article id="fullPageGrid1">
+                    <p id="techUsed"> DESCRIPTION </p>
+                    <p id="moduleShortDescription"> This module required me to create a website based on a given topic. 
+                        The focus of this module being creating a REST API using a SQL database to manage the data and using version control correctly and effeciently. 
+                        The topic given was to create a Frequently Asked Questions website where students can submit questions regarding university topics.  
+                    </p>
+                </article>
+                <article id="fullPageGrid2">            
+                    <p id="techUsed"> TECHNOLOGY USED </p>
+                    <ul id="techUsedList"> 
+                        <li id=techItem"> JavaScript </li>
+                        <li id=techItem"> HTML </li>
+                        <li id=techItem"> CSS </li>
+                        <li id=techItem"> Deno </li>
+                        <li id=techItem"> Github </li>
+                        <li id=techItem"> REST API </li>
+                        <li id=techItem"> Single Page Application (SPA) </li>
+                        <li id=techItem"> Heroku Deployment</li>
+                        <li id=techItem"> My SQL</li>
+                    </ul>
+                </article>   
+                <article id="fullPageGrid3">  
+                    <p id="techUsed"> URL </p>          
+                    <p id="fullPageWebLink"> <a href="https://frequenltyaskedquestions.herokuapp.com/#allQuestions" id="moduleFullPageLink">https://frequentlyaskedquestions.herokuapp.com/#allQuestions</a> </p>
+                    <article id="fullPageGrid5">  
+                        <p id="techUsed"> GITHUB LINK </p> 
+                        <p id="fullPageWebLink"> <a href="https://github.com/faizafj/frequentlyAskedQuestions/" id="moduleFullPageLink"> FAQ Website GitHub </a> </p>
+                    </article> 
+
+                    <article id="fullPageGrid4">  
+                        <p id="techUsed"> GRADE GIVEN </p>          
+                        <p> 68% </p>
+                    </article> 
+                </article>       
+            </article>
+            <article id="fullPageDescription">
+                <p id="moduleDescription"> This project required me to create a full stack Frequently Asked Questions website where users can create and answer queries using JavaScript, CSS, HTML and a Deno stack. 
+                    <br> -	Version Control: Used GitHub to assist with feature management whilst using linters to ensure code quality and enforcing checks before commits.
+                    <br> -	Server-side Scripting:  Created a database to manage website data and used an API in order to see how data was being processed. 
+                    <br> -	Client-Side programming: Created a responsive user-interface for the website, which allows users to view questions, and add their own. 
+                </p>
+            </article>
+
+
+            <video controls id="videoWalkthrough">
+                <source src="photos/frontend.mp4" type="video/mp4">
+            </video>
+            <p id="moduleDescription"> Above is a walkthrough of the website that was created. It shows all the features that were created, how the website can be used, the pages available and the design of the website too.  </p>
+
+            <video controls id="videoWalkthrough">
+                <source src="photos/api.mp4" type="video/mp4">
+            </video>
+            <p id="moduleDescription"> Above is an explanation of the API and how it was created and is used. </p>
+                    
+        </article>
+    </center>
+
+
+    <script>
+        //Back to top button created using Code from W3Schools - https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+
+        var mybutton = document.getElementById("backToTopButton");
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+
+    <footer>
+        <ul>
+            <li> <p id="copyrightFJ"> © Faiza Javed 2023 </p></li>
+        </ul>
+    </footer>
+
+
+</body>

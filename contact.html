@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title> Faiza Javed's Portfolio </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+			<ul id="NavBar">
+                <img src="photos/logo.png" id="logo"> </img> 
+				<li><a href="index.html">Home</a></li>
+				<li> <a href="about.html">About</a></li>
+                <li> <a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+    </header>
+
+    <button onclick="topFunction()" id="backToTopButton" title="Go to top">Back to Top</button>
+
+
+    <article id="contactArticle"> 
+        <article id="contactInfo"> 
+            <h1 id="contactTitle"> Want to get in contact? </h1>
+            <p id="information"> (Click on the image to email or visit my Linkedin)</p>
+        </article>
+
+
+        <article id="emailLinkedinLinks"> 
+            <center>
+            <figure id="contactLinks">                 
+                <a href="mailto:faizafj@outlook.com?subject=Contact%20via%20portfolio%20website%20" id="imgLink"><img src="photos/email.png" id="contactImages"> </img>  </a> 
+                <figcaption>Email Me!</figcaption> 
+            </figure>
+            <figure id="socialImagesBox">               
+               <a href="https://www.linkedin.com/in/faizajaved-/"  id="imgLink"> <img src="photos/linkedinLink.png" id="contactImages"> </img>  </a> 
+                <figcaption>Contact me on Linkedin!</figcaption> 
+            </figure>
+            </center>
+        </article>
+
+
+        <center>
+            <h1 id="contactTitle"> Or, you can contact me using the following form:</h1>
+            <article id="contactForm">
+                    <form name="contact" netlify data-netlify-recaptcha="true">
+                        <input type="hidden" name="subject" 
+                        value="Your request to contact Faiza Javed" />
+                    
+                        <article id="formQuestion"> 
+                            <label for="firstName"  id="formTitle">First Name*</label>
+                            <br>
+                            <input type="text" placeholder="Enter your first name" name="firstName" required>
+                            <br>
+                        </article>
+
+                        <article id="formQuestion"> 
+                            <label for="surnname"  id="formTitle" >Surname</label>
+                            <br>
+                            <input type="text" placeholder="Enter your surname" name="surname">
+                            <br>
+                        </article>
+
+                        <article id="formQuestion"> 
+                            <label for="company"  id="formTitle" >Company*</label>
+                            <br>
+                            <input type="text" placeholder="Enter your company name" name="company" required>
+                            <br>
+                        </article>
+                        
+                        <article id="formQuestion"> 
+                            <label for="email"  id="formTitle" >Email Address*</label>
+                            <br>
+                            <input type="text" placeholder="Enter your email address" name="email" required>
+                            <br>
+                        </article>
+                        
+                        <article id="formQuestion"> 
+                            <label for="message"  id="formTitle" >Message*</label>
+                            <br>
+                            <textarea  placeholder="Enter your message" name="message" required> </textarea>
+                            <br> 
+                        </article>
+
+                        <div data-netlify-recaptcha="true"></div>
+                        <button type="submit" id="submitContact">Submit</button>
+                    </form>
+            </article>
+        </center>
+    </article>
+    
+    
+
+
+    <script>
+        //Back to top button created using Code from W3Schools - https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+
+        var mybutton = document.getElementById("backToTopButton");
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+
+
+
+    <footer>
+        <ul>
+            <li> <p id="copyrightFJ"> © Faiza Javed 2023</p></li>
+        </ul>
+    </footer>
+</body>
