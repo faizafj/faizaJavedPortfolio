@@ -34,20 +34,21 @@ html {
 /* Navigation Bar CSS */
 
 
-p{
+p {
     font-size: 15px;
 }
+
 nav {
     background-color: black;
-	height: 100px;
-	width: 100%;
-	z-index: 1;
-	top: 0;
-	left: 0;
-    
+    height: 100px;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
 }
 
-#navbar{
+#navbar {
     padding: 10px;
     padding-left: 30px;
     text-align: left;
@@ -55,30 +56,30 @@ nav {
 }
 
 
-ul > li {
+ul>li {
     display: inline-block;
-    margin: 30px; 
+    margin: 30px;
     padding-bottom: 50px;
     vertical-align: super;
 
 }
 
-a{
-	padding: 5px;
-	text-decoration: None;
-	color: white;
+a {
+    padding: 5px;
+    text-decoration: None;
+    color: white;
 }
 
 a:hover {
-	color: #F1C4BA;
-	border-radius: 15px; 
+    color: #F1C4BA;
+    border-radius: 15px;
     font-style: italic;
 }
 
 
-#logo{
-	width: 90px;
-	height: 25px;  
+#logo {
+    width: 90px;
+    height: 25px;
 }
 
 
@@ -220,8 +221,8 @@ footer>ul>li {
 }
 
 #socialImages {
-    width: 3vw;
-    height: 3vw;
+    width: 5vw;
+    height: 5vw;
     margin-top: 20px;
 }
 
@@ -781,6 +782,7 @@ input[type=text]::placeholder {
     margin-left: 10vw;
 
 }
+
 #featuredProjectDescriptionAndTitleRight {
     display: grid;
     margin-right: 10vw;
@@ -826,4 +828,87 @@ input[type=text]::placeholder {
     color: #B8145B;
     margin: 3px;
     font-size: 1.5vw;
+}
+
+
+
+/* Responsive CSS */
+
+
+@media screen and (max-width: 800px) {
+
+    /* Navigation Bar  */
+    ul>li {
+        margin: inherit;
+        margin-left: 10px;
+    }
+
+    #navBar {
+        text-align: center;
+        padding-left: 0%;
+    }
+
+    #nav {
+        height: 50px;
+    }
+
+    /* Introduction */
+    #hello1 {
+        font-size: 5vw;
+    }
+
+    #socialImages {
+        width: 9vw;
+        height: 9vw;
+        margin: 0;
+
+    }
+
+    #aboutSnippet {
+        height: fit-content;
+    }
+
+    #portfolioTitle {
+        font-size: 7vw;
+    }
+
+
+    /* Homepage featured projects */
+    #featuredProject {
+        display: flex;
+        flex-flow: column;
+        margin: 4vw;
+    }
+
+
+    #featuredProjectDescriptionAndTitleRight {
+        display: grid;
+        margin: 30px;
+        text-align: center;
+        order: 2;
+    }
+
+    #featuredProjectDescriptionAndTitle {
+        display: grid;
+        margin: 30px;
+        text-align: center;
+        order: 2;
+    }
+
+    #featuredProjectImageContainer {
+        order: 1;
+    }
+
+    #featuredProjectTitle {
+        font-size: 7vw;
+    }
+
+    #featuredProjectDescription {
+        font-size: 4vw;
+    }
+
+    #featuredProjectLink {
+        font-size: 4vw;
+    }
+
 }
