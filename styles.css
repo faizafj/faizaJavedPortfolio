@@ -1,7 +1,7 @@
 body {
-	color:black;
+    color: black;
     font-family: 'Arimo', sans-serif;
-	margin: 0px;
+    margin: 0px;
     height: fit-content;
     padding: 0%;
     background-color: black;
@@ -9,7 +9,7 @@ body {
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 #backToTopButton {
     display: none;
@@ -24,12 +24,12 @@ html {
     color: white;
     padding: 15px;
     border-radius: 4px;
-  }
-  
-  #backToTopButton:hover {
-    background-color:  #F1C4BA;
+}
+
+#backToTopButton:hover {
+    background-color: #F1C4BA;
     color: black;
-  }
+}
 
 /* Navigation Bar CSS */
 
@@ -51,6 +51,7 @@ nav {
     padding: 10px;
     padding-left: 30px;
     text-align: left;
+    vertical-align: inherit;
 }
 
 
@@ -58,6 +59,8 @@ ul > li {
     display: inline-block;
     margin: 30px; 
     padding-bottom: 50px;
+    vertical-align: super;
+
 }
 
 a{
@@ -79,12 +82,13 @@ a:hover {
 }
 
 
+
 /* Footer CSS  */
 
 footer {
     background: black;
-	height: 75px;
-	width: 100%;
+    height: 75px;
+    width: 100%;
     position: relative;
     bottom: 0;
     margin: 0%;
@@ -92,20 +96,21 @@ footer {
 
 
 }
-footer > ul > li > a{
+
+footer>ul>li>a {
     color: white;
 }
 
-footer > ul {
+footer>ul {
     padding: 0%;
     margin: 0%;
 }
 
-footer > ul > li {
+footer>ul>li {
     padding-bottom: 0px;
 }
 
-#copyrightFJ{
+#copyrightFJ {
     color: white;
 }
 
@@ -114,14 +119,13 @@ footer > ul > li {
 /* About Section (Homepage) CSS */
 #aboutSnippet {
     background: black;
-    height: fit-content;
     margin: 20px;
     width: auto;
     display: grid;
-    /* grid-template-columns: 1fr 4fr, 5fr; */
+    height: -webkit-fill-available;
 }
 
-#snippetOne{
+#snippetOne {
     background: black;
     padding: 10px;
     margin: 10px;
@@ -130,7 +134,7 @@ footer > ul > li {
 
 }
 
-#snippetTwo{
+#snippetTwo {
     background: black;
     padding: 20px;
     margin: 10px;
@@ -138,11 +142,11 @@ footer > ul > li {
     grid-column-end: 1;
 }
 
-#imgLink{
+#imgLink {
     background-color: black;
 }
 
-#snippetThree{
+#snippetThree {
     background: black;
     padding: 20px;
     margin: 10px;
@@ -151,52 +155,54 @@ footer > ul > li {
     width: auto;
 }
 
-#faizaPic{
+#faizaPic {
     height: 300px;
     width: 300px;
     margin: 10px;
 }
 
-#helloWrapper{
+#helloWrapper {
     margin: 0;
 }
 
-#hello1{
+#hello1 {
     color: #F1C4BA;
     font-family: 'Pacifico', serif;
-    font-size: 30px;
+    font-size: 2.5vw;
     line-height: 5px;
     margin-bottom: 0px;
 
-  }
-
-  #hello2{
-    color:#F1C4BA;
-    line-height: 5px;
-    font-size: 90px;
-    font-family: 'Merriweather', serif;
-    letter-spacing: 10px;
-    display: inline-block;
-    margin-bottom: 10px;
-    cursor: default;
-  }
-  #hello2:hover {
-    color:white;
-    line-height: 5px;
-    font-size: 90px;
-    font-family: 'Merriweather', serif;
-    letter-spacing: 10px;
-    display: inline-block;
-    margin-bottom: 10px;
-    cursor: default;
-  }
-
-
-#snippetTitleBig{
-    width: 50%;
-	height: 50%;  
 }
-#snippetTitle{
+
+#hello2 {
+    color: #F1C4BA;
+    line-height: 5px;
+    font-size: 10vw;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+    cursor: default;
+}
+
+#hello2:hover {
+    color: white;
+    line-height: 5px;
+    font-size: 10vw;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+    cursor: default;
+}
+
+
+#snippetTitleBig {
+    width: 50%;
+    height: 50%;
+}
+
+#snippetTitle {
     color: black;
     text-align: center;
     font-family: "Pangolin", sans-serif;
@@ -213,22 +219,22 @@ footer > ul > li {
     font-size: 18px;
 }
 
-#socialImages{
-    width: 150px;
-    height: 150px;
-    margin: 20px;
+#socialImages {
+    width: 3vw;
+    height: 3vw;
+    margin-top: 20px;
 }
 
-#socialImagesBox{
+#socialImagesBox {
     display: inline-block;
 }
 
-figcaption{
+figcaption {
     color: white;
 }
 
 
-#viewPortfolio{
+#viewPortfolio {
     color: black;
     background-color: white;
     width: 150px;
@@ -239,7 +245,7 @@ figcaption{
 }
 
 
-#viewPortfolio:hover{
+#viewPortfolio:hover {
     color: white;
     background-color: #F1C4BA;
     width: 150px;
@@ -248,41 +254,42 @@ figcaption{
     border: none;
 }
 
-#viewPortfolioLink:hover{
+#viewPortfolioLink:hover {
     background-color: black;
     width: 5px;
     height: 5px;
     border: none;
 }
 
-#viewPortfolioLink{
+#viewPortfolioLink {
     background-color: black;
     width: 5px;
     height: 5px;
     border: none;
 }
 
-figure > a{
+figure>a {
     background-color: white;
     color: white;
 }
 
-figure > a:hover{
+figure>a:hover {
     background-color: white;
     color: white;
 }
 
 
 /* Main content CSS  */
-#mainArticle{
+#mainArticle {
     margin: 20px;
-	height: fit-content;
+    height: fit-content;
     padding: 10px;
-    grid-template-columns: repeat(3, 1fr );
+    grid-template-columns: repeat(3, 1fr);
     display: grid;
     background-color: black;
 }
-#articleInGrid{
+
+#articleInGrid {
     border: solid 1px black;
     background-color: white;
     border-radius: 15px;
@@ -291,55 +298,64 @@ figure > a:hover{
     margin-bottom: 20px;
     width: 90%;
 }
-#moduleImg{
-    width: 90%;
+
+#moduleImg {
+    max-width: 90%;
     height: 50%;
     margin: 20px;
     border: black 1px solid;
 }
-#moduleTitle{
+
+#moduleTitle {
     text-align: center;
     margin: 15px;
     margin-bottom: 5px;
 }
-#moduleGrade{
+
+#moduleGrade {
     font-size: 15px;
     font-weight: bold;
     text-align: left;
 }
-#moduleDate{
+
+#moduleDate {
     font-size: 15px;
     text-align: left;
 }
-#moduleLink{
+
+#moduleLink {
     font-size: 15px;
     color: white;
     background-color: black;
     height: 50%;
 
 }
-#moduleLink:hover{
+
+#moduleLink:hover {
     font-size: 15px;
     color: white;
-    background-color:#F1C4BA;
+    background-color: #F1C4BA;
     height: 50%;
     border-radius: 0px;
     font-style: normal;
 }
-#moduleLinkWrapper{
+
+#moduleLinkWrapper {
     text-align: center;
     margin: 10px;
     display: inline-block;
     margin-bottom: 30px;
 
 }
-#titleArt{
+
+#titleArt {
     height: 50px;
     margin-bottom: 30px;
     width: fit-content;
     word-break: break-word;
 }
-#modulesmallTitle{
+
+#modulesmallTitle {
     margin: 0px;
     padding: 0px;
 }
@@ -347,7 +363,7 @@ figure > a:hover{
 
 /* CSS for each portfolio details page */
 
-#articleTitleBig{
+#articleTitleBig {
     background-color: #F1C4BA;
     height: auto;
     padding-top: 20px;
@@ -356,22 +372,22 @@ figure > a:hover{
     margin: 0;
 }
 
-#moduleTitleBig{
+#moduleTitleBig {
     font-size: 30px;
     color: white;
 }
 
-#moduleDateBig{
+#moduleDateBig {
     text-align: center;
     color: white;
 }
 
 /* Background for the page */
-#fullPage{
+#fullPage {
     background-color: black;
 }
 
-#fullPageGrid{
+#fullPageGrid {
     display: flex;
     margin-left: 50px;
     margin-right: 50px;
@@ -380,39 +396,46 @@ figure > a:hover{
     color: white;
 }
 
-#fullPageGrid1{
+#fullPageGrid1 {
     padding: 10px;
     width: 33%;
     padding: 20px;
 }
-#fullPageGrid2{
+
+#fullPageGrid2 {
     padding: 5px;
     width: 33%;
     padding-left: 30px;
     padding: 20px;
 }
-#fullPageGrid3{
+
+#fullPageGrid3 {
     width: 33%;
     padding: 20px;
 }
-#fullPageGrid4{
+
+#fullPageGrid4 {
     width: 33%;
     padding: 0px;
 }
-#fullPageGrid5{
+
+#fullPageGrid5 {
     width: 33%;
     padding: 0px;
     display: inline
 }
-#techUsed{
+
+#techUsed {
     color: #F1C4BA;
     text-align: center;
-    text-decoration: underline; 
+    text-decoration: underline;
 }
-#moduleShortDescription{
+
+#moduleShortDescription {
     text-align: left;
 }
-#moduleDescription{
+
+#moduleDescription {
     color: white;
     font-size: 20px;
     margin-left: 100px;
@@ -420,78 +443,87 @@ figure > a:hover{
     margin-bottom: 50px;
     text-align: justify;
 }
-#resultsDescription{
+
+#resultsDescription {
     color: white;
 }
-#resultsDescription2{
+
+#resultsDescription2 {
     color: white;
     text-align: center;
 }
 
-#descriptionList{
+#descriptionList {
     color: white;
     margin: 30px;
-    
+
 }
- #descriptionItem{
-    margin: 0; 
+
+#descriptionItem {
+    margin: 0;
     padding: 0;
     /* display: list-item; */
- }
+}
 
-#descriptionTitle{
+#descriptionTitle {
     color: white;
     text-align: center;
 }
-#resultsImg{
+
+#resultsImg {
     width: 100%;
     height: 100%;
-    
+
 }
-#resultsArticle{
+
+#resultsArticle {
     display: flex;
 }
 
-#resultsSec1{
+#resultsSec1 {
     width: 70%;
     margin: 0;
     padding: 0;
 }
-#resultsSec2{
+
+#resultsSec2 {
     width: 30%;
     font-size: 25px;
     background-color: #F1C4BA;
     padding: 10px;
     margin-left: 10px;
 }
-#resultsSec23{
+
+#resultsSec23 {
     font-size: 25px;
     background-color: #F1C4BA;
     padding: 10px;
     margin-left: 10px;
     height: fit-content;
 }
-#moduleImgBig{
+
+#moduleImgBig {
     width: 90%;
     height: 90%;
     margin: 20px;
     border: solid white 1px;
 }
 
-#moduleImgMedium{
+#moduleImgMedium {
     width: 60%;
     height: 60%;
     margin: 20px;
     border: solid white 1px;
 }
 
-#moduleImgMedium2{
+#moduleImgMedium2 {
     width: 30%;
     height: 30%;
     margin: 20px;
     border: solid white 1px;
 }
-#moduleImgSmall{
+
+#moduleImgSmall {
     width: 70%;
     height: 70%;
     margin: 10px;
@@ -499,78 +531,85 @@ figure > a:hover{
     border: solid white 1px;
 }
 
-#gifSquare{
+#gifSquare {
     width: 80%;
     height: 25%;
 }
 
-#moduleImgNoBorder{
+#moduleImgNoBorder {
     width: 90%;
     height: 90%;
     padding: 0;
 }
 
-#XDMultipleImages{
+#XDMultipleImages {
     width: 50%;
     height: 50%;
     padding: 0;
 }
-#techUsedList{
+
+#techUsedList {
     padding: 0%;
-    text-align: left; 
+    text-align: left;
 }
-#techItem{
-    margin: 0%; 
-    text-align: left; 
+
+#techItem {
+    margin: 0%;
+    text-align: left;
 }
-#techUsedList > li{
+
+#techUsedList>li {
     margin: 0%;
     padding: 0%;
     display: list-item;
 }
-#moduleFullPageLink{
+
+#moduleFullPageLink {
     color: white;
 }
-#fullPageWebLink{
+
+#fullPageWebLink {
     color: black;
-    word-wrap:  break-word;
+    word-wrap: break-word;
     margin: 10px;
     padding: 10px;
     font-size: 15px;
 }
-#fullPageDescription{
+
+#fullPageDescription {
     margin: 30px;
     text-align: left;
     color: black;
 }
 
-#fullPageDescriptionList{
+#fullPageDescriptionList {
     margin: 10px;
     text-align: left;
     color: black;
     width: 90%;
 }
+
 /* About page CSS */
 
 
-#faizaPicAbout{
+#faizaPicAbout {
     height: 200px;
     width: 200px;
     margin: 10px;
 }
 
-#aboutFigcaption{
+#aboutFigcaption {
     color: white;
     text-align: center;
     font-weight: bold;
 }
 
-#aboutFigcaption2{
+#aboutFigcaption2 {
     color: white;
     text-align: center;
 }
 
-#aboutFigcaption3{
+#aboutFigcaption3 {
     color: white;
     text-align: center;
     font-weight: bold;
@@ -578,18 +617,19 @@ figure > a:hover{
     font-family: "Arimo", sans-serif;
 }
 
-#aboutFigcaption4{
+#aboutFigcaption4 {
     color: white;
     text-align: center;
     font-weight: bold;
     font-size: 20px;
 }
 
-#figcaption{
+#figcaption {
     width: 80%;
     margin: 30px;
 }
-#videoWalkthrough{
+
+#videoWalkthrough {
     width: 70%;
     height: 70%;
     border: solid white 10px;
@@ -598,21 +638,21 @@ figure > a:hover{
 
 /* Contact Page CSS: */
 
-#contactArticle{
+#contactArticle {
     background-color: black;
     padding: 20px;
 }
 
-#contactInfo{
+#contactInfo {
     text-align: center;
 }
 
-#contactTitle{
+#contactTitle {
     color: #F1C4BA;
     font-size: 25px;
 }
 
-#contactForm{
+#contactForm {
     display: block;
     padding: 20px;
     margin: 10px;
@@ -621,20 +661,21 @@ figure > a:hover{
     border-radius: 15px;
 }
 
-form{
+form {
     padding: 10px;
 }
 
-#formTitle{
+#formTitle {
     color: black;
 }
 
-#formQuestion{
+#formQuestion {
     margin: 10px;
     text-align: left;
 }
 
-input[type=text], textarea {
+input[type=text],
+textarea {
     width: 100%;
     padding: 10px;
     border: solid 1px black;
@@ -649,26 +690,26 @@ input[type=text]::placeholder {
     color: #F1C4BA;
 }
 
-#contactPic{
+#contactPic {
     width: 5%;
     height: 5%;
 }
 
-#contactImages{
+#contactImages {
     display: inline;
 }
 
-#submitContact{
+#submitContact {
     color: black;
     background-color: white;
     width: 150px;
     height: 50px;
     border-radius: 5px;
-    border:  none;
+    border: none;
     font-size: 15px;
 }
 
-#submitContact:hover{
+#submitContact:hover {
     color: white;
     background-color: black;
     width: 150px;
@@ -678,28 +719,28 @@ input[type=text]::placeholder {
     font-size: 15px;
 }
 
-#emailLinkedinLinks{
+#emailLinkedinLinks {
     background: black;
     margin: 10px;
 }
 
-#contactImages{
+#contactImages {
     width: 100px;
     height: 100px;
     margin: 20px;
 }
 
-#contactLinks{
+#contactLinks {
     display: inline-block;
 }
 
-#information{
+#information {
     color: white;
     font-size: 15px;
 }
 
 /* Contact success message  */
-#contactSuccessArticle{
+#contactSuccessArticle {
     background-color: white;
     margin: 30px;
     padding: 30px;
@@ -708,20 +749,81 @@ input[type=text]::placeholder {
 }
 
 
-#portfolioTitle{
+#portfolioTitle {
     color: #F1C4BA;
     font-family: 'Pacifico', serif;
-    font-size: 30px;
+    font-size: 3vw;
 }
 
-#portfolioTitleSmall{
+#portfolioTitleSmall {
     color: white;
     font-size: 15px;
 }
 
-#imageCaptions{
+#imageCaptions {
     color: white;
 }
 
 
 
+/* Featured projects - homepage */
+#featuredProjectsContainer {}
+
+#featuredProject {
+    background-color: #F1C4BA;
+    padding: 1.5vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#featuredProjectDescriptionAndTitle {
+    display: grid;
+    margin-left: 10vw;
+
+}
+#featuredProjectDescriptionAndTitleRight {
+    display: grid;
+    margin-right: 10vw;
+    text-align: center;
+
+}
+
+#featuredProjectTitle {
+    font-family: 'Merriweather', serif;
+    color: #B8145B;
+    font-size: 1.75vw;
+}
+
+#featuredProjectDescription {
+    font-size: 1.5vw;
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+#featuredProjectDescriptionAndTitleSkills {
+    font-size: 30px;
+    color: #B8145B;
+}
+
+#featuredProjectImage {
+    max-width: 50%;
+    min-width: -webkit-fill-available;
+    margin: 1vw;
+}
+
+#featuredProjectLinkWrapper {
+    background-color: white;
+    color: black;
+    padding: 3px;
+    display: inline-grid;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+
+#featuredProjectLink {
+    text-align: center;
+    color: #B8145B;
+    margin: 3px;
+    font-size: 1.5vw;
+}
