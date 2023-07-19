@@ -878,6 +878,7 @@ input[type=text]::placeholder {
         flex-flow: column;
         margin: 4vw;
         height: fit-content;
+        contain: content;
     }
 
 
