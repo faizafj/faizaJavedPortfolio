@@ -918,6 +918,7 @@ input[type=text]::placeholder {
 
     #featuredProjectsContainer{
         height: fit-content;
+        overflow: inherit;
     }
 
 }
