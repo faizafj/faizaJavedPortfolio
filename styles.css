@@ -808,8 +808,7 @@ input[type=text]::placeholder {
 }
 
 #featuredProjectImage {
-    max-width: 50%;
-    min-width: -webkit-fill-available;
+    width: -webkit-fill-available;
     margin: 1vw;
 }
 
@@ -910,6 +909,11 @@ input[type=text]::placeholder {
 
     #featuredProjectLink {
         font-size: 4vw;
+    }
+
+    
+    #featuredProjectImage {
+        max-width: 100%;
     }
 
 }
