@@ -916,4 +916,8 @@ input[type=text]::placeholder {
         max-width: 100%;
     }
 
+    #featuredProjectsContainer{
+        height: fit-content;
+    }
+
 }
