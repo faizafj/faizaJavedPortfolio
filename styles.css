@@ -877,9 +877,10 @@ input[type=text]::placeholder {
         display: flex;
         flex-flow: column;
         margin: 4vw;
-        height: max-content;
-        overflow: inherit;
-        padding: 1px;
+        /* height: max-content;
+        overflow: inherit; */
+        /* padding: 1px; */
+        height: 100%;
     }
 
 
@@ -918,8 +919,8 @@ input[type=text]::placeholder {
         max-width: 100%;
     }
 
-    #featuredProjectsContainer{
+    /* #featuredProjectsContainer{
         height: fit-content;
-    }
+    } */
 
 }
