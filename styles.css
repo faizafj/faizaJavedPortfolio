@@ -11,7 +11,8 @@ html {
     scroll-behavior: smooth;
 }
 
-body, html{
+body,
+html {
     overflow-x: hidden;
 }
 
@@ -227,11 +228,11 @@ footer>ul>li {
 #socialImages {
     width: 5vw;
     height: 5vw;
-    margin-top: 20px;
 }
 
 #socialImagesBox {
     display: inline-block;
+    margin: 0;
 }
 
 figcaption {
@@ -861,12 +862,6 @@ input[type=text]::placeholder {
         font-size: 5vw;
     }
 
-    #socialImages {
-        width: 9vw;
-        height: 9vw;
-        margin: 0;
-
-    }
 
     #aboutSnippet {
         height: fit-content;
@@ -877,12 +872,34 @@ input[type=text]::placeholder {
     }
 
 
+    #socialImagesBox {
+        display: inline-block;
+        margin: 0;
+        display: inline-block;
+        width: min-content;
+    }
+
+    #socialImages {
+        width: 9vw;
+        height: 9vw;
+        margin: 0;
+
+    }
+
+
+    #snippetThree {
+        display: inline-grid;
+        grid-template-columns: auto auto auto auto;
+        padding: 0;
+        margin: 0;
+    }
+
     /* Homepage featured projects */
     #featuredProject {
         margin: 4vw;
         padding: 1.5vw;
         display: grid;
-        grid-template-columns:auto;
+        grid-template-columns: auto;
         height: max-content;
     }
 
@@ -906,24 +923,40 @@ input[type=text]::placeholder {
     }
 
     #featuredProjectTitle {
-        font-size: 7vw;
+        font-size: 5vw;
     }
 
     #featuredProjectDescription {
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
     #featuredProjectLink {
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
-    
     #featuredProjectImage {
         max-width: 100%;
     }
 
-    /* #featuredProjectsContainer{
-        height: fit-content;
-    } */
+    #featuredProjectDescriptionAndTitleSkills {
+        font-size: 5vw;
+    }
 
+}
+
+
+@media screen and (max-width: 800px) {
+
+
+    #logo {
+        display: none;
+    }
+
+
+   #NavBar > a {
+        padding: 5px;
+        text-decoration: None;
+        color: white;
+        font-size: 4vw;
+    }
 }
