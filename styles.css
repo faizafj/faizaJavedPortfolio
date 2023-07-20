@@ -11,6 +11,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body, html{
+    overflow-x: hidden;
+}
+
 #backToTopButton {
     display: none;
     position: fixed;
@@ -775,6 +779,7 @@ input[type=text]::placeholder {
     padding: 1.5vw;
     display: grid;
     grid-template-columns: 50% 50%;
+    height: max-content;
 }
 
 #featuredProjectDescriptionAndTitle {
@@ -874,13 +879,11 @@ input[type=text]::placeholder {
 
     /* Homepage featured projects */
     #featuredProject {
-        display: flex;
-        flex-flow: column;
         margin: 4vw;
-        /* height: max-content;
-        overflow: inherit; */
-        /* padding: 1px; */
-        height: 100%;
+        padding: 1.5vw;
+        display: grid;
+        grid-template-columns:auto;
+        height: max-content;
     }
 
 
