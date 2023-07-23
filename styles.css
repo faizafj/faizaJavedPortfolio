@@ -123,6 +123,7 @@ footer>ul>li {
 
 
 /* About Section (Homepage) CSS */
+
 #aboutSnippet {
     background: black;
     margin: 20px;
@@ -240,6 +241,8 @@ figcaption {
 }
 
 
+
+
 #viewPortfolio {
     color: black;
     background-color: white;
@@ -282,6 +285,30 @@ figure>a {
 figure>a:hover {
     background-color: white;
     color: white;
+}
+
+#faizaImage {
+    width: 20vw;
+    padding: 5vw;
+}
+
+#aboutMeHomepageContainer {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    margin: 5vw;
+    height: max-content;
+}
+
+
+#introductionHello {
+    font-size: 1.5vw;
+    color: #F1C4BA;
+    padding: 5vw;
+    text-align: left;
+}
+
+#aboutMeHomepage2{
+    margin:auto;
 }
 
 
@@ -773,7 +800,7 @@ input[type=text]::placeholder {
 
 
 /* Featured projects - homepage */
-#featuredProjectsContainer {}
+
 
 #featuredProject {
     background-color: #F1C4BA;
@@ -805,7 +832,7 @@ input[type=text]::placeholder {
 #featuredProjectDescription {
     font-size: 1.5vw;
     word-wrap: break-word;
-    text-align: justify;
+    text-align: left;
 }
 
 #featuredProjectDescriptionAndTitleSkills {
@@ -953,7 +980,7 @@ input[type=text]::placeholder {
     }
 
 
-   #NavBar > a {
+    #NavBar>a {
         padding: 5px;
         text-decoration: None;
         color: white;
