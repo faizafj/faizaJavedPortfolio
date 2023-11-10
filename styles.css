@@ -147,6 +147,7 @@ footer>ul>li {
     margin: 10px;
     grid-column-start: 1;
     grid-column-end: 1;
+    display: contents;
 }
 
 #imgLink {
@@ -292,6 +293,11 @@ figure>a:hover {
     padding: 5vw;
 }
 
+#faizaImage2 {
+    visibility: hidden;
+    display: none;
+}
+
 #aboutMeHomepageContainer {
     display: grid;
     grid-template-columns: 25% 75%;
@@ -307,8 +313,8 @@ figure>a:hover {
     text-align: left;
 }
 
-#aboutMeHomepage2{
-    margin:auto;
+#aboutMeHomepage2 {
+    margin: auto;
 }
 
 
@@ -873,15 +879,23 @@ input[type=text]::placeholder {
     ul>li {
         margin: inherit;
         margin-left: 10px;
+        display: contents;
     }
 
     #navBar {
         text-align: center;
         padding-left: 0%;
+
     }
 
-    #nav {
-        height: 50px;
+    nav {
+        background-color: black;
+        height: 100px;
+        padding: 1vw;
+        width: 100%;
+        z-index: 1;
+        top: 0;
+        left: 0;
     }
 
     /* Introduction */
@@ -969,21 +983,101 @@ input[type=text]::placeholder {
         font-size: 5vw;
     }
 
+    #faizaImage {
+        visibility: hidden;
+        width: 20vw;
+        padding: 5vw;
+        display: none;
+    }
+
+    #faizaImage2 {
+        visibility: visible;
+        width: 40vw;
+        padding: 5vw;
+        display: inline;
+
+    }
+
+
+    #aboutMeHomepageContainer {
+        display: flex;
+        grid-template-columns: 25% 75%;
+        margin: 5vw;
+        height: max-content;
+    }
+
 }
 
 
 @media screen and (max-width: 800px) {
 
-
     #logo {
         display: none;
     }
 
+    ul>li {
+        margin: inherit;
+        margin-left: 10px;
+        display: contents;
+    }
+
+    li>a {
+        text-decoration: None;
+        color: white;
+        padding: 2vw;
+    }
+
+
+
+
+    nav {
+        background-color: black;
+        height: 100px;
+        padding: 1vw;
+        width: 100%;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
 
     #NavBar>a {
         padding: 5px;
         text-decoration: None;
         color: white;
         font-size: 4vw;
+    }
+
+    #hello2 {
+        font-size: 15vw;
+    }
+
+
+    #introductionHello {
+        font-size: 4vw;
+        text-align: center;
+
+    }
+
+
+
+    #faizaImage {
+        visibility: hidden;
+        width: 20vw;
+        padding: 5vw;
+        display: none;
+    }
+
+    #faizaImage2 {
+        visibility: visible;
+        width: 40vw;
+        padding: 5vw;
+        display: inline;
+    }
+
+    #aboutMeHomepageContainer {
+        display: flex;
+        grid-template-columns: 25% 75%;
+        margin: 5vw;
+        height: max-content;
     }
 }
